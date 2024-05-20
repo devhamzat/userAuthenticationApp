@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import org.devhamzat.userauthentication.utils.ValidPassword;
 
 @Getter
 @Setter
@@ -20,7 +19,7 @@ public class UserDto {
     @Email
     @NotEmpty
     private String email;
-    @ValidPassword
+
     @NotEmpty
     private String password;
     private String userName;
